@@ -52,6 +52,7 @@ private extension VideoControlView {
         return Image(systemName: systemName)
             .resizable()
             .frame(width: 32, height: 32)
+            .foregroundStyle(.gray)
     }
     
 }
