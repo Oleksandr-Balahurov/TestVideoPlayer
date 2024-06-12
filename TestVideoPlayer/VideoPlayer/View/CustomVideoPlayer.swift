@@ -1,5 +1,5 @@
 //
-//  VideoPlayer.swift
+//  CustomVideoPlayer.swift
 //  TestVideoPlayer
 //
 //  Created by Oleksandr Balahurov on 07.05.2024.
@@ -9,7 +9,7 @@ import Foundation
 import CoreMedia
 import SwiftUI
 
-public struct VideoPlayer {
+public struct CustomVideoPlayer {
     public enum State {
         
         /// From the first load to get the first frame of the video
@@ -44,7 +44,7 @@ public struct VideoPlayer {
     }
 }
 
-public extension VideoPlayer {
+public extension CustomVideoPlayer {
     /// Set the preload size, the default value is 1024 * 1024, unit is byte.
     static var preloadByteCount: Int {
         get { VideoPreloadManager.shared.preloadByteCount }
@@ -75,7 +75,7 @@ public extension VideoPlayer {
     }
 }
 
-public extension VideoPlayer {
+public extension CustomVideoPlayer {
     struct Config {
         struct Handler {
             var onBufferChanged: ((Double) -> Void)?
@@ -152,7 +152,7 @@ public extension VideoPlayer {
     
 }
 
-extension VideoPlayer: UIViewRepresentable {
+extension CustomVideoPlayer: UIViewRepresentable {
     public func makeUIView(context: Context) -> VideoPlayerView {
         let uiView = VideoPlayerView()
         
@@ -206,19 +206,19 @@ extension VideoPlayer: UIViewRepresentable {
         }
     }
     
-    public static func dismantleUIView(_ uiView: VideoPlayerView, coordinator: VideoPlayer.Coordinator) {
+    public static func dismantleUIView(_ uiView: VideoPlayerView, coordinator: CustomVideoPlayer.Coordinator) {
         uiView.pause(reason: .hidden)
     }
     
     public class Coordinator: NSObject {
-        var videoPlayer: VideoPlayer
+        var videoPlayer: CustomVideoPlayer
         var observingURL: URL?
         var observer: Any?
         var observerTime: CMTime?
         var observerBuffer: Double?
         var hasLoaded = false
 
-        init(_ videoPlayer: VideoPlayer) {
+        init(_ videoPlayer: CustomVideoPlayer) {
             self.videoPlayer = videoPlayer
         }
         
@@ -265,7 +265,7 @@ extension VideoPlayer: UIViewRepresentable {
 }
 
 private extension VideoPlayerView {
-    func convertState() -> VideoPlayer.State {
+    func convertState() -> CustomVideoPlayer.State {
         switch state {
         case .none, .loading:
             return .loading

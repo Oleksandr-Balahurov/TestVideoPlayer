@@ -37,7 +37,7 @@
 		A3658EF42BEA751600471FD0 /* VideoDownloadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EDD2BEA751600471FD0 /* VideoDownloadInfo.swift */; };
 		A3658EF52BEA751600471FD0 /* VideoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EDE2BEA751600471FD0 /* VideoDownloader.swift */; };
 		A3658EF62BEA751600471FD0 /* VideoDownloaderSessionDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EDF2BEA751600471FD0 /* VideoDownloaderSessionDelegateHandler.swift */; };
-		A3658EF82BEA7BA900471FD0 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EF72BEA7BA900471FD0 /* VideoPlayer.swift */; };
+		A3658EF82BEA7BA900471FD0 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EF72BEA7BA900471FD0 /* CustomVideoPlayer.swift */; };
 		A3658EFA2BEB6E5D00471FD0 /* VideoControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3658EF92BEB6E5D00471FD0 /* VideoControlView.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +93,7 @@
 		A3658EDD2BEA751600471FD0 /* VideoDownloadInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDownloadInfo.swift; sourceTree = "<group>"; };
 		A3658EDE2BEA751600471FD0 /* VideoDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDownloader.swift; sourceTree = "<group>"; };
 		A3658EDF2BEA751600471FD0 /* VideoDownloaderSessionDelegateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDownloaderSessionDelegateHandler.swift; sourceTree = "<group>"; };
-		A3658EF72BEA7BA900471FD0 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		A3658EF72BEA7BA900471FD0 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		A3658EF92BEB6E5D00471FD0 /* VideoControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,7 +236,7 @@
 				A3658ED82BEA751600471FD0 /* VideoPlayerView.swift */,
 				A3658ED92BEA751600471FD0 /* VideoFullscreenTransitioner.swift */,
 				A3658EDA2BEA751600471FD0 /* VideoFullscreenPlayerView.swift */,
-				A3658EF72BEA7BA900471FD0 /* VideoPlayer.swift */,
+				A3658EF72BEA7BA900471FD0 /* CustomVideoPlayer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 				A3658EEC2BEA751600471FD0 /* VideoRequestLoader.swift in Sources */,
 				A3658EF12BEA751600471FD0 /* VideoFullscreenTransitioner.swift in Sources */,
 				A3658EFA2BEB6E5D00471FD0 /* VideoControlView.swift in Sources */,
-				A3658EF82BEA7BA900471FD0 /* VideoPlayer.swift in Sources */,
+				A3658EF82BEA7BA900471FD0 /* CustomVideoPlayer.swift in Sources */,
 				A3658EF22BEA751600471FD0 /* VideoFullscreenPlayerView.swift in Sources */,
 				A3658E962BEA72BC00471FD0 /* TestVideoPlayerApp.swift in Sources */,
 				A3658EE32BEA751600471FD0 /* VideoCacheHandler.swift in Sources */,
